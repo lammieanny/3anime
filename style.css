@@ -1,0 +1,30 @@
+#cloud{ 
+    animation: float 20s infinite;
+    position: relative;  
+}
+
+@keyframes float{
+0% { left: -10px;}
+50% { left: 10px;}
+100% { left: -10px;}
+}
+
+#garden:hover {
+    animation: grow 3s;
+}
+
+@keyframes grow {
+
+0% { font-weight:100; font-size: 12pt; color: greenyellow;}
+
+100% { font-weight: bolder; font-size: 60pt; color: green;}
+}
+
+#stop { 
+    animation: spin 20s linear infinite;
+}
+
+@keyframes spin{
+0% { transform: rotate(0deg); transform-origin: center;}
+100% {transform: rotate(359deg); transform-origin: center;}
+}
